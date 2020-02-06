@@ -1,3 +1,7 @@
+html,body{
+  height:100%;
+}
+
 .txt-green {
   color: mediumspringgreen;
 }
@@ -6,11 +10,22 @@
 .nav-link.active {
   border-bottom: 4px mediumspringgreen solid;
   cursor: crosshair;
-  height: 100%;
+  padding-bottom:1.3em;
+}
+
+.border-green{
+  border:2px mediumseagreen solid;
+}
+
+.nav-link{
+  margin-right:0.2em;
 }
 
 .bg-red {
   background-color: red;
+}
+.bg-silver{
+  background-color: rgb(243, 243, 243);
 }
 .vw5{
     font-size:5vw;
@@ -41,18 +56,30 @@
   }
 }
 
+.img-card{  
+  height:140px;
+  width:140px;
+  object-fit: cover;
+  max-height: 100%;
+  border:4px solid silver;
+  border-radius: 50%;
+}
 .bgimg-cover {
     background-image: url("../img/header.jpg");
     background-size: cover;
-    height:100vh;
 }
+
+
 
 @media only screen and (max-width: 768px) {
     .bgimg-cover {
         background-image: url("../img/header-min.jpg");
         background-size: cover;
     }
-  }
-.cover-text{
-  padding-top: 30vh;
 }
+
+.bgimg-work{
+  background-image: url("../img/work-together.jpg");
+  background-size: cover;
+}
+
