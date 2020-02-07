@@ -1,85 +1,79 @@
-html,body{
-  height:100%;
+html,
+body {
+  height: 100%;
 }
 
-.txt-green {
-  color: mediumspringgreen;
+.border-green {
+  border: 2px mediumseagreen solid;
 }
 
-.nav-link:hover,
-.nav-link.active {
-  border-bottom: 4px mediumspringgreen solid;
-  cursor: crosshair;
-  padding-bottom:1.3em;
+.border-bottom-green{
+  border-bottom:2px mediumspringgreen dotted
 }
 
-.border-green{
-  border:2px mediumseagreen solid;
+.bg-green {
+  background-color: mediumspringgreen; /* rgb(54,234,127) */
 }
-
-.nav-link{
-  margin-right:0.2em;
-}
-
-.bg-red {
-  background-color: red;
-}
-.bg-silver{
+.bg-silver {
   background-color: rgb(243, 243, 243);
 }
-.vw5{
-    font-size:5vw;
-}
-.vw4{
-    font-size:4vw;
-}
 
-.vw3{
-    font-size:3vw;
-}
-.vw2{
-    font-size:2vw;
-}
-.vw1{
-    font-size:1vw;
-}
-.bg-green {
-  background-color: mediumspringgreen;
-  /* rgb(54,234,127) */
-}
 .bg-trans {
   background: rgba(0, 0, 0, 0.5);
 }
+
 @media only screen and (max-width: 768px) {
+  .bgimg-cover {
+    background-image: url("../img/header-min.jpg");
+    background-size: cover;
+  }
   .bg-trans {
     background: #343a40;
   }
 }
+.txt-green {
+  color: mediumspringgreen;
+}
 
-.img-card{  
-  height:140px;
-  width:140px;
+.nav-link {
+  margin-right: 0.2em;
+}
+.nav-link:hover,
+.nav-link.active {
+  border-bottom: 4px mediumspringgreen solid;
+  cursor: crosshair;
+  padding-bottom: 1.3em;
+}
+
+.btn:hover {
+  background-color: mediumspringgreen;
+  color: white;
+}
+
+.img-card {
+  height: 140px;
+  width: 140px;
   object-fit: cover;
   max-height: 100%;
-  border:4px solid silver;
+  border: 4px solid silver;
   border-radius: 50%;
 }
 .bgimg-cover {
-    background-image: url("../img/header.jpg");
-    background-size: cover;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
 }
 
 
 
-@media only screen and (max-width: 768px) {
-    .bgimg-cover {
-        background-image: url("../img/header-min.jpg");
-        background-size: cover;
-    }
-}
-
-.bgimg-work{
+.bgimg-work {
   background-image: url("../img/work-together.jpg");
   background-size: cover;
 }
 
+.card-date{
+  width:58px;
+}
+
+.shadow-dark{
+  box-shadow: 4px 4px 10px 4px black;  
+}
