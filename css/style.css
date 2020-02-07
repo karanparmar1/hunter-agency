@@ -18,6 +18,10 @@ body {
   background-color: rgb(243, 243, 243);
 }
 
+.bg-black{
+  background-color: black;
+}
+
 .bg-trans {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -42,7 +46,6 @@ body {
 .nav-link.active {
   border-bottom: 4px mediumspringgreen solid;
   cursor: crosshair;
-  padding-bottom: 1.3em;
 }
 
 .btn:hover {
@@ -63,8 +66,9 @@ body {
   background-size: cover;
 }
 
-
-
+.opacity50{
+  opacity:0.5;
+}
 .bgimg-work {
   background-image: url("../img/work-together.jpg");
   background-size: cover;
@@ -77,3 +81,18 @@ body {
 .shadow-dark{
   box-shadow: 4px 4px 10px 4px black;  
 }
+.rotateup{
+  transform: rotate(-45deg);
+}
+.goup{
+  transform: rotate(45deg);
+  background: gray;
+  color:springgreen;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom:30%;
+  right:2%;
+}
+
+
