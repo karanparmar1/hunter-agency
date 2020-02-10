@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Hunter Agency template with bootsrap4" />
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <!--FontAwesome For Icons-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Hunter Agency</title>
   </head>
@@ -13,8 +20,7 @@
   <body>
     <div class="container-fluid  bgimg-cover h-100">
       <div
-        class="row bg-dark py-2 text-light small d-none d-md-flex justify-content-md-around"
-      >
+        class="row bg-dark py-2 text-light small d-none d-md-flex justify-content-md-around">
         <div class="col-auto">
           <div>+8801974532 <span class="px-3">example@gmail.com</span></div>
         </div>
@@ -27,24 +33,24 @@
         </div>
       </div>
       <nav
-        class="row navbar navbar-expand-md  bg-trans navbar-dark py-md-0 justify-content-md-around my-md-3"
-        id="navbar"
-      >
-        <div class="col-auto">
+        class="row navbar navbar-expand-md bg-trans navbar-dark py-md-0 justify-content-md-around my-md-3"
+        id="navbar">
+        <div class="col-12 col-md-auto px-0">
           <a class="navbar-brand" href="#navbar">
-            <span class="h1 txt-green"> H</span>hunter
+            <span class="h1 txt-green font-weight-bolder"> H</span>hunter
           </a>
-        </div>
-        <div class="col-auto">
           <button
-            class="navbar-toggler"
+            class="outline-0 navbar-toggler float-right border-0 mt-2"
             type="button"
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
-          >
-            <span class="navbar-toggler-icon"> <span class="sr-only">navBtn</span> </span>
+            aria-expanded="true">
+            <span class="fa fa-bars fa-2x txt-green">
+              <span class="sr-only">navBtn</span>
+            </span>
           </button>
-
+        </div>
+        <div class="col-12 col-md-auto">
           <!-- Navbar links -->
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
@@ -76,18 +82,19 @@
 
       <div class="row align-items-center justify-content-center h-100">
         <div class="col-auto text-white text-center">
-          <p class="h2 font-weight-bolder">Welcome to Hunter Agency</p>
+          <p class="h1 font-weight-bolder">Welcome to Hunter Agency</p>
           <p class="py-2">
             We Provide Best Web services in the Tech Industry,<br />We develop
             beautiful websites.
           </p>
-          <button class="btn btn-outline-light rounded-0 font-weight-bold">
-            ABOUT US
-          </button>
           <a
-            class="btn bg-green rounded-0 text-light font-weight-bold"
-            href="#contact"
-          >
+            href="#about"
+            class="btn btn-outline-light rounded-0 font-weight-bold">
+            ABOUT US
+          </a>
+          <a
+            class="btn bg-green rounded-0 text-white font-weight-bold"
+            href="#contact">
             CONTACT US
           </a>
         </div>
@@ -112,11 +119,8 @@
         </div>
 
         <div class="col-md-5 story-video">
-         <i class="fa fa-play-circle fa-5x btn-play"></i>
-          <video
-            width="100%"
-            onclick="this.play();"
-          >
+          <i class="fa fa-play-circle fa-5x btn-play"></i>
+          <video width="100%" preload="none" onclick="this.play();">
             <source src="./video/about-video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -198,8 +202,7 @@
           <p>Something in mind, a project to share maybe ?</p>
           <button
             class="btn txt-green rounded-0 px-3 border-green"
-            type="button"
-          >
+            type="button">
             Start Project
           </button>
         </div>
@@ -290,8 +293,7 @@
 
     <div class="container-fluid text-center my-5 py-5">
       <div
-        class="row bgimg-work py-5 align-items-center justify-content-center"
-      >
+        class="row bgimg-work py-5 align-items-center justify-content-center">
         <div class="col-md-auto">
           <p class="h2 txt-green">700</p>
           <p class="text-white">Users</p>
@@ -419,8 +421,7 @@
 
     <div class="container-fluid text-center my-5">
       <div
-        class="row bgimg-work py-5 align-items-center justify-content-center"
-      >
+        class="row bgimg-work py-5 align-items-center justify-content-center">
         <div class="col-md-auto">
           <p class="h2">
             <span class="txt-green"> WORK WITH US</span>
@@ -430,12 +431,9 @@
             We’re committed to providing the best customer service possible.
           </p>
 
-          <button
-            class="btn txt-green rounded-0 px-3 border-green"
-            type="button"
-          >
+          <a href="#contact" class="btn txt-green rounded-0 px-3 border-green">
             CONTACT US
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -638,14 +636,12 @@
             </div>
           </div>
           <div
-            class="row my-5 justify-content-center carousel-indicators position-relative"
-          >
+            class="row my-5 justify-content-center carousel-indicators position-relative">
             <div class="col-0 mx-2">
               <div
                 class="rounded-circle active border"
                 data-target="#myCarousel"
-                data-slide-to="0"
-              >
+                data-slide-to="0">
                 &emsp;&nbsp;&nbsp;
               </div>
             </div>
@@ -653,8 +649,7 @@
               <div
                 class="rounded-circle border"
                 data-target="#myCarousel"
-                data-slide-to="1"
-              >
+                data-slide-to="1">
                 &emsp;&nbsp;&nbsp;
               </div>
             </div>
@@ -662,8 +657,7 @@
               <div
                 class="rounded-circle border"
                 data-target="#myCarousel"
-                data-slide-to="2"
-              >
+                data-slide-to="2">
                 &emsp;&nbsp;&nbsp;
               </div>
             </div>
@@ -678,7 +672,10 @@
           <p class="h2">
             WATCH OUR AWESOME <span class="text-green">VIDEO</span>
           </p>
-          <a class="btn text-light rounded-circle m-3 p-3" type="button" href="#about">
+          <a
+            class="btn text-light rounded-circle m-3 p-3"
+            type="button"
+            href="#about">
             <i class="fa fa-play-circle fa-5x"></i>
             <p class="sr-only">UP</p>
           </a>
@@ -704,8 +701,7 @@
           />
 
           <div
-            class="card-date position-absolute px-2 bg-green text-white text-center"
-          >
+            class="card-date position-absolute px-2 bg-green text-white text-center">
             <span class="h5">Jun</span>
             <div clas="text-light">27</div>
           </div>
@@ -738,8 +734,7 @@
             loading="lazy"
           />
           <div
-            class="card-date position-absolute px-2 bg-green text-white text-center"
-          >
+            class="card-date position-absolute px-2 bg-green text-white text-center">
             <span class="h5">May</span>
             <div>07</div>
           </div>
@@ -771,8 +766,7 @@
             loading="lazy"
           />
           <div
-            class="card-date position-absolute px-2 bg-green text-white text-center"
-          >
+            class="card-date position-absolute px-2 bg-green text-white text-center">
             <span class="h5">Nov</span>
             <div>17</div>
           </div>
@@ -923,8 +917,7 @@
         <div
           id="carouselExampleSlidesOnly"
           class="carousel slide"
-          data-ride="carousel"
-        >
+          data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row justify-content-center mx-auto">
@@ -1071,12 +1064,9 @@
       </div>
     </div>
 
-    
-
     <div class="container-fluid text-left my-5">
       <div
-        class="row bgimg-work py-5 justify-content-around  align-items-center"
-      >
+        class="row bgimg-work py-5 justify-content-around  align-items-center">
         <div class="col-md-auto">
           <span class="h5 text-left text-white">
             PROVIDING SMART LOGISTIC SOLUTION ACROSS THE WORLD
@@ -1085,8 +1075,7 @@
         <div class="col-md-auto text-center my-4">
           <button
             class="btn txt-green rounded-0 px-4 border-green float-md-right"
-            type="button"
-          >
+            type="button">
             Get A Quote
           </button>
         </div>
@@ -1159,16 +1148,15 @@
                     placeholder="leave your message"
                     class="form-control"
                     id="message"
+                    s
                     cols="auto"
-                    rows="3"
-                  ></textarea>
+                    rows="3"></textarea>
                 </div>
               </div>
 
               <button
                 type="submit"
-                class="btn bg-green text-white text-light font-weight-bold px-3 rounded-0"
-              >
+                class="btn bg-green text-white text-light font-weight-bold px-3 rounded-0">
                 Submit
               </button>
             </form>
@@ -1218,8 +1206,7 @@
 
     <div class="container-fluid position-relative">
       <div
-        class="row bg-black text-center justify-content-around py-3 align-items-center"
-      >
+        class="row bg-black text-center justify-content-around py-3 align-items-center">
         <div class="col-md-auto">
           <h1 class="txt-green">H<small class="text-white">hunter</small></h1>
         </div>
@@ -1232,15 +1219,19 @@
 
         <div class="col-md-auto m-3">
           <div class="text-secondary">
-            <i class="fa fa-facebook border px-2 py-2"></i>
-            <i class="fa fa-twitter border  px-2 py-2"></i>
-            <i class="fa fa-pinterest border px-2 py-2"></i>
-            <i class="fa fa-linkedin border px-2 py-2"></i>
+            <i class="fa fa-facebook fa-border p-1"></i>
+            <i class="fa fa-twitter fa-border p-1"></i>
+            <i class="fa fa-pinterest fa-border p-1"></i>
+            <i class="fa fa-linkedin fa-border p-1"></i>
           </div>
         </div>
       </div>
-      <div class="goup p-0">
-        <a  class="btn wh-100" role="button" id="gotop" href="#navbar">
+      <div class="goup bg-dark">
+        <a
+          class="btn txt-green wh-100 rounded-0"
+          role="button"
+          id="gotop"
+          href="#navbar">
           <i class="rotateup fa fa-2x fa-angle-double-up"></i>
           <span class="sr-only">TOP</span>
         </a>
@@ -1248,14 +1239,14 @@
     </div>
 
     <!--jQuery JS-->
-    <script src="./js/jquery-3.4.1.min.js" ></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
     <!--BS4 JS-->
-    <script src="./js/bootstrap.min.js" ></script>
-    <!--FontAwesome For Icons-->
-    <script src="https://use.fontawesome.com/73706e2372.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://use.fontawesome.com/73706e2372.js"></script> -->
 
     <script>
-      $('.carousel').carousel({interval:1500});
+      $(".carousel").carousel({ interval: 1500 });
     </script>
   </body>
 </html>
