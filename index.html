@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Hunter Agency template with bootsrap4">
+    <meta name="description" content="Hunter Agency template with bootsrap4" />
     <title>Hunter Agency</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
 
@@ -36,7 +36,7 @@
         </div>
         <div class="col-auto">
           <button class="navbar-toggler" type="button" data-toggle="collapse">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"> </span>
           </button>
 
           <!-- Navbar links -->
@@ -207,7 +207,11 @@
       </div>
       <div class="card-deck">
         <div class="card my-3">
-          <img class="img-card mx-auto mt-3 card-img-top" alt="Shishir" src="./img/men-min.jpg" />
+          <img
+            class="img-card mx-auto mt-3 card-img-top"
+            alt="Shishir"
+            src="./img/men-min.jpg"
+          />
           <div class="card-body">
             <h4 class="card-title">SHISHIR IMRAN</h4>
             <p class="card-text">CEO</p>
@@ -237,7 +241,11 @@
         </div>
         <div class="w-100 d-none d-sm-block d-md-none"></div>
         <div class="card my-3">
-          <img class="img-card mx-auto mt-3 card-img-top" alt="John" src="./img/men-min.jpg" />
+          <img
+            class="img-card mx-auto mt-3 card-img-top"
+            alt="John"
+            src="./img/men-min.jpg"
+          />
           <div class="card-body">
             <h4 class="card-title">JOHN DOE</h4>
             <p class="card-text">DEVELOPER</p>
@@ -300,19 +308,19 @@
       </div>
       <div class="row justify-content-center py-3">
         <div class="col-auto py-2">
-          <button class="btn bg-green rounded-0">ALL</button>
+          <button class="btn border btn-recentwork bg-green rounded-0">ALL</button>
         </div>
         <div class="col-auto py-2">
-          <button class="btn border rounded-0">Design</button>
+          <button class="btn border btn-recentwork rounded-0">Design</button>
         </div>
         <div class="col-auto py-2">
-          <button class="btn border rounded-0">Photogrpahy</button>
+          <button class="btn border btn-recentwork rounded-0">Photogrpahy</button>
         </div>
         <div class="col-auto py-2">
-          <button class="btn border  rounded-0">Development</button>
+          <button class="btn border btn-recentwork  rounded-0">Development</button>
         </div>
         <div class="col-auto py-2">
-          <button class="btn border rounded-0">Animation</button>
+          <button class="btn border btn-recentwork rounded-0">Animation</button>
         </div>
       </div>
       <div class="row row-cols-md-3 no-gutters py-3">
@@ -468,8 +476,12 @@
       </div>
 
       <div class="card-deck text-left">
-        <div class="card my-3 shadow rounded-0">
-          <img class="mx-auto card-img-top" src="./img/news1-min.jpg" alt="news1" />
+        <div class="card my-3 shadow rounded-0 div-scale">
+          <img
+            class="mx-auto card-img-top"
+            src="./img/news1-min.jpg"
+            alt="news1"
+          />
 
           <div
             class="card-date position-absolute px-2 bg-green text-white text-center"
@@ -498,8 +510,12 @@
 
         <div class="w-100 d-none d-sm-block d-md-none"></div>
 
-        <div class="card my-3 shadow rounded-0">
-          <img class="mx-auto card-img-top" src="./img/news2-min.jpg" alt="news2" />
+        <div class="card my-3 shadow rounded-0 div-scale">
+          <img
+            class="mx-auto card-img-top"
+            src="./img/news2-min.jpg"
+            alt="news2"
+          />
           <div
             class="card-date position-absolute px-2 bg-green text-white text-center"
           >
@@ -526,8 +542,12 @@
 
         <div class="w-100 d-none d-sm-block d-md-none"></div>
 
-        <div class="card my-3 shadow rounded-0">
-          <img class="mx-auto card-img-top" src="./img/news3-min.jpg" alt="news3" />
+        <div class="card my-3 shadow rounded-0 div-scale">
+          <img
+            class="mx-auto card-img-top"
+            src="./img/news3-min.jpg"
+            alt="news3"
+          />
           <div
             class="card-date position-absolute px-2 bg-green text-white text-center"
           >
@@ -565,97 +585,112 @@
       </div>
       <div class="container">
         <div class="row text-white justify-content-around">
-          <div class="col-md-auto py-4 px-0 bg-dark my-4">
-            <div class="h4 txt-green">BASIC</div>
-            <div class="h5 my-2 py-2 bg-green">$10 / month</div>
-            <div class="p-4 text-left">
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5GB Linux Web Space
+          <div class="col-md-auto col-lg-3 py-4">
+            <div class="bg-dark py-4 px-0 bg-dark">
+              <div class="h4 txt-green">BASIC</div>
+              <div class="h5 my-2 py-2 bg-green">$10 / month</div>
+              <div class="p-4 text-left">
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5GB Linux Web Space
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5 MySQL Databases
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> Unlimited Email
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 250GB mo Transfer
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 24/7 Tech Support
+                </div>
               </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5 MySQL Databases
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> Unlimited Email
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 250GB mo Transfer
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 24/7 Tech Support
+              <div class="btn btn-dark rounded-pill shadow-dark">
+                Select Plan
               </div>
             </div>
-
-            <div class="btn btn-dark rounded-pill shadow-dark">Select Plan</div>
           </div>
-          <div class="col-md-auto py-4 px-0 bg-dark my-4">
-            <div class="h4 txt-green">BASIC</div>
-            <div class="h5 my-2 py-2 bg-green">$10 / month</div>
-            <div class="p-4 text-left">
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5GB Linux Web Space
+
+          <div class="col-md-auto col-lg-3 py-4">
+            <div class="bg-dark py-4 px-0 bg-dark">
+              <div class="h4 txt-green">BASIC</div>
+              <div class="h5 my-2 py-2 bg-green">$10 / month</div>
+              <div class="p-4 text-left">
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5GB Linux Web Space
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5 MySQL Databases
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> Unlimited Email
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 250GB mo Transfer
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 24/7 Tech Support
+                </div>
               </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5 MySQL Databases
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> Unlimited Email
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 250GB mo Transfer
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 24/7 Tech Support
+              <div class="btn btn-dark rounded-pill shadow-dark">
+                Select Plan
               </div>
             </div>
-
-            <div class="btn btn-dark rounded-pill shadow-dark">Select Plan</div>
           </div>
-          <div class="col-md-auto py-4 px-0 bg-dark my-4">
-            <div class="h4 txt-green">BASIC</div>
-            <div class="h5 my-2 py-2 bg-green">$10 / month</div>
-            <div class="p-4 text-left">
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5GB Linux Web Space
+
+          <div class="col-md-auto col-lg-3 py-4">
+            <div class="bg-dark py-4 px-0 bg-dark">
+              <div class="h4 txt-green">BASIC</div>
+              <div class="h5 my-2 py-2 bg-green">$10 / month</div>
+              <div class="p-4 text-left">
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5GB Linux Web Space
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5 MySQL Databases
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> Unlimited Email
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 250GB mo Transfer
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 24/7 Tech Support
+                </div>
               </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5 MySQL Databases
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> Unlimited Email
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 250GB mo Transfer
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 24/7 Tech Support
+              <div class="btn btn-dark rounded-pill shadow-dark">
+                Select Plan
               </div>
             </div>
-
-            <div class="btn btn-dark rounded-pill shadow-dark">Select Plan</div>
           </div>
-          <div class="col-md-auto py-4 px-0 bg-dark my-4">
-            <div class="h4 txt-green">BASIC</div>
-            <div class="h5 my-2 py-2 bg-green">$10 / month</div>
-            <div class="p-4 text-left">
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5GB Linux Web Space
+
+          <div class="col-md-auto col-lg-3 py-4">
+            <div class="bg-dark py-4 px-0 bg-dark">
+              <div class="h4 txt-green">BASIC</div>
+              <div class="h5 my-2 py-2 bg-green">$10 / month</div>
+              <div class="p-4 text-left">
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5GB Linux Web Space
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 5 MySQL Databases
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> Unlimited Email
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 250GB mo Transfer
+                </div>
+                <div class="border-bottom-green">
+                  <i class="fa fa-check"></i> 24/7 Tech Support
+                </div>
               </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 5 MySQL Databases
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> Unlimited Email
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 250GB mo Transfer
-              </div>
-              <div class="border-bottom-green">
-                <i class="fa fa-check"></i> 24/7 Tech Support
+              <div class="btn btn-dark rounded-pill shadow-dark">
+                Select Plan
               </div>
             </div>
-
-            <div class="btn btn-dark rounded-pill shadow-dark">Select Plan</div>
           </div>
         </div>
       </div>
@@ -744,9 +779,10 @@
               <div class="form-row">
                 <div class="form-group col">
                   <input
-                    type="email"
+                    type="name"
                     class="form-control"
                     name="name"
+                    id="name"
                     placeholder="Enter Name"
                   />
                 </div>
@@ -755,6 +791,7 @@
                     type="email"
                     class="form-control"
                     name="email"
+                    id="email"
                     placeholder="Enter Email"
                   />
                 </div>
@@ -765,14 +802,16 @@
                     type="phone"
                     class="form-control"
                     name="phone"
+                    id="phone"
                     placeholder="Enter Phone"
                   />
                 </div>
                 <div class="form-group col">
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
-                    name="email"
+                    name="service"
+                    id="service"
                     placeholder="Interest Of Service"
                   />
                 </div>
@@ -784,7 +823,7 @@
                     name="message"
                     placeholder="leave your message"
                     class="form-control"
-                    id=""
+                    id="message"
                     cols="auto"
                     rows="3"
                   ></textarea>
@@ -865,13 +904,20 @@
           </div>
         </div>
       </div>
-      <div class="goup">
+      <div class="goup p-0">
         <button class="btn" id="gotop">
-          <i class="rotateup fa fa-2x fa-angle-double-up"></i>
+          <i class="rotateup fa fa-2x fa-angle-double-up"
+            ><p class="d-none">UP</p></i
+          >
         </button>
       </div>
     </div>
 
+    <!--jQuery JS-->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--BS4 JS-->
+    <script src="js/bootstrap.min.js"></script>
     <!--FontAwesome For Icons-->
     <script src="https://use.fontawesome.com/73706e2372.js" async></script>
   </body>

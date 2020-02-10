@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
 }
 
 .border-green {
@@ -46,7 +45,7 @@ body {
 .nav-link:hover,
 .nav-link.active {
   border-bottom: 4px mediumspringgreen solid;
-  cursor: crosshair;
+
 }
 
 .btn:hover {
@@ -71,8 +70,8 @@ body {
   opacity:0.5;
 }
 .bgimg-work {
-  background-image: url("../img/work-together.jpg");
-  background-size: cover;
+  background-image: url("../img/quote.jpg");
+  background-attachment: fixed;
 }
 
 .card-date{
@@ -85,6 +84,17 @@ body {
 .rotateup{
   transform: rotate(-45deg);
 }
+.div-scale{
+  transition: all 0.4s;
+}
+.div-scale:hover{
+  transform: scale(1.1);
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
 .goup{
   transform: rotate(45deg);
   background: gray;
