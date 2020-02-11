@@ -1,0 +1,36 @@
+/** =================== MONTSERRAT =================== **/
+
+/** Montserrat Thin **/
+@font-face {
+  font-family: "Montserrat-100";
+  font-style: normal;
+  src: url("Montserrat-Thin.ttf") format("truetype");
+}
+
+/** Montserrat Light **/
+@font-face {
+  font-family: "Montserrat-300";
+  font-style: normal;
+  src: url("Montserrat-Light.ttf") format("truetype");
+}
+
+/** Montserrat SemiBold **/
+@font-face {
+  font-family: "Montserrat-600";
+  font-style: normal;
+  src: url("Montserrat-SemiBold.ttf") format("truetype");
+}
+
+/** Montserrat ExtraBold **/
+@font-face {
+  font-family: "Montserrat-800";
+  font-style: normal;
+  src: url("Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+/** Montserrat Black **/
+@font-face {
+  font-family: "Montserrat-900";
+  font-style: normal;
+  src: url("Montserrat-Black.ttf") format("truetype");
+}
