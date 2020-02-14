@@ -7,11 +7,21 @@
     <meta name="description" content="Hunter Agency template with bootsrap4" />
     <link rel="shortcut icon" href="./img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/slick/slick-theme.css"
+    />
     <!--FontAwesome For Icons-->
     <link
       rel="stylesheet"
       type="text/css"
+      href="vendors/font-awesome/css/font-awesome.min.css"
+      <!--
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      --
+    />
     />
     <link
       rel="stylesheet"
@@ -155,12 +165,16 @@
             class="fa fa-play-circle fa-5x btn-play"
             id="playButton"
             onclick="vdoplay(0)"
-          ></button>
+          >
+            <span class="sr-only">play</span>
+          </button>
           <button
             class=" fa fa-pause-circle fa-5x btn-play"
             id="pauseButton"
             onclick="vdoplay(1)"
-          ></button>
+          >
+            <span class="sr-only">pause</span>
+          </button>
           <!-- <video width="100%" preload="none" onclick="this.play();"> -->
           <video width="100%" id="vdo-about">
             <source src="./video/about-video.mp4" type="video/mp4" />
@@ -270,7 +284,7 @@
           <div class="card-body">
             <h5 class="card-title mont-600">SHISHIR IMRAN</h5>
             <p class="card-text mont-600 text-muted">CEO</p>
-            <div class="txt-lightgrey icon-marginx">
+            <div class="txt-lightgrey">
               <i class="fa fa-facebook fa-border"></i>
               <i class="fa fa-twitter fa-border"></i>
               <i class="fa fa-pint fa-border"></i>
@@ -288,7 +302,7 @@
           <div class="card-body">
             <h5 class="card-title mont-600">SADIA AFRIN</h5>
             <p class="card-text mont-600 text-muted">DESIGNER</p>
-            <div class="txt-lightgrey icon-marginx">
+            <div class="txt-lightgrey">
               <i class="fa fa-facebook fa-border"></i>
               <i class="fa fa-twitter fa-border"></i>
               <i class="fa fa-pint fa-border"></i>
@@ -306,7 +320,7 @@
           <div class="card-body">
             <h5 class="card-title mont-600">JOHN DOE</h5>
             <p class="card-text mont-600 text-muted">DEVELOPER</p>
-            <div class="txt-lightgrey icon-marginx">
+            <div class="txt-lightgrey">
               <i class="fa fa-facebook fa-border"></i>
               <i class="fa fa-twitter fa-border"></i>
               <i class="fa fa-pint fa-border"></i>
@@ -493,251 +507,182 @@
         </div>
       </div>
 
-      <div class="row px-3 px-md-0 justify-content-around">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-12 col-md m-md-3 border p-3">
-                  <div class="row justify-content-around align-items-stretch">
-                    <div class="col-md-4">
-                      <img
-                        src="./img/men-min.jpg"
-                        loading="lazy"
-                        class="img-card img-fluid mb-3"
-                        alt="Client1"
-                      />
-                      <div>
-                        <img
-                          src="./img/signature.png"
-                          class="img-fluid"
-                          alt="shishir"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="col text-md-left border-left">
-                      <blockquote class="font-italic">
-                        “ In my history of working with Tech agencies, I can
-                        honestly say that there is not one company that I've
-                        ever worked with that has better service than Hunter
-                        agency. You and your company are great partners and I
-                        enjoy working with you.”
-                      </blockquote>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-none d-md-block col-md m-3 border p-3">
-                  <div class="row justify-content-around align-items-stretch">
-                    <div class="col-md-4">
-                      <img
-                        src="./img/women-min.jpg"
-                        loading="lazy"
-                        class="img-card img-fluid mb-3"
-                        alt="Client2"
-                      />
+      <div class="row">
+        <div class="col">
+          <div class="client-review-slider">
+            <div class="mt-3 mb-5 px-2">
+              <div class="container border">
+                <div class="row py-3">
+                  <div class="col-md-4 border-right">
+                    <img
+                      src="./img/men-min.jpg"
+                      loading="lazy"
+                      class="img-card img-fluid mb-3 mx-auto"
+                      alt="Client1"
+                    />
+                    <div class="px-2">
                       <img
                         src="./img/signature.png"
-                        class="img-fluid"
-                        alt="Sadia"
+                        class="img-sign img-fluid mx-auto"
+                        alt="shishir"
                         loading="lazy"
                       />
                     </div>
-                    <div class="col text-md-left border-left">
-                      <blockquote class="font-italic">
-                        “ We have been working with Hunter agency on a variety
-                        of projects and they continue to impress. Their team has
-                        the ability to handle almost any task making them a huge
-                        resource for a small business. All of their work is
-                        timely and accurate.”
-                      </blockquote>
-
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                    </div>
+                  </div>
+                  <div class="col text-md-left">
+                    <blockquote class="text-center text-md-left">
+                      “In my history of working with Tech agencies, I can
+                      honestly say that there is not one company that I've ever
+                      worked with that has better service than Hunter agency.”
+                    </blockquote>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-12 col-md m-md-3 border p-3">
-                  <div class="row justify-content-around align-items-stretch">
-                    <div class="col-md-4">
-                      <img
-                        src="./img/men-min.jpg"
-                        loading="lazy"
-                        class="img-card img-fluid mb-3"
-                        alt="Client1"
-                      />
-                      <div>
-                        <img
-                          src="./img/signature.png"
-                          class="img-fluid"
-                          alt="shishir"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="col text-md-left border-left">
-                      <blockquote class="font-italic">
-                        “ In my history of working with Tech agencies, I can
-                        honestly say that there is not one company that I've
-                        ever worked with that has better service than Hunter
-                        agency. You and your company are great partners and I
-                        enjoy working with you.”
-                      </blockquote>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-none d-md-block col-md m-3 border p-3">
-                  <div class="row justify-content-around align-items-stretch">
-                    <div class="col-md-4">
-                      <img
-                        src="./img/women-min.jpg"
-                        loading="lazy"
-                        class="img-card img-fluid mb-3"
-                        alt="Client2"
-                      />
+            <div class="mt-3 mb-5 px-2">
+              <div class="container border">
+                <div class="row py-3">
+                  <div class="col-md-4 border-right">
+                    <img
+                      src="./img/women-min.jpg"
+                      loading="lazy"
+                      class="img-card img-fluid mb-3 mx-auto"
+                      alt="Client2"
+                    />
+                    <div class="px-2">
                       <img
                         src="./img/signature.png"
-                        class="img-fluid"
+                        class="img-sign img-fluid mx-auto"
                         alt="Sadia"
                         loading="lazy"
                       />
                     </div>
-                    <div class="col text-md-left border-left">
-                      <blockquote class="font-italic">
-                        “ We have been working with Hunter agency on a variety
-                        of projects and they continue to impress. Their team has
-                        the ability to handle almost any task making them a huge
-                        resource for a small business. All of their work is
-                        timely and accurate.”
-                      </blockquote>
-
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                    </div>
+                  </div>
+                  <div class="col text-md-left">
+                    <blockquote class="text-center text-md-left">
+                      “We have been working with Hunter agency on a variety of
+                      projects and they continue to impress.Their team has the
+                      ability to handle almost any task accurately.”
+                    </blockquote>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-12 col-md m-md-3 border p-3">
-                  <div class="row justify-content-around align-items-stretch">
-                    <div class="col-md-4">
-                      <img
-                        src="./img/men-min.jpg"
-                        loading="lazy"
-                        class="img-card img-fluid mb-3"
-                        alt="Client1"
-                      />
-                      <div>
-                        <img
-                          src="./img/signature.png"
-                          class="img-fluid"
-                          alt="shishir"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="col text-md-left border-left">
-                      <blockquote class="font-italic">
-                        “ In my history of working with Tech agencies, I can
-                        honestly say that there is not one company that I've
-                        ever worked with that has better service than Hunter
-                        agency. You and your company are great partners and I
-                        enjoy working with you.”
-                      </blockquote>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-none d-md-block col-md m-3 border p-3">
-                  <div class="row justify-content-around align-items-stretch">
-                    <div class="col-md-4">
-                      <img
-                        src="./img/women-min.jpg"
-                        loading="lazy"
-                        class="img-card img-fluid mb-3"
-                        alt="Client2"
-                      />
+            <div class="mt-3 mb-5 px-2">
+              <div class="container border">
+                <div class="row py-3">
+                  <div class="col-md-4 border-right">
+                    <img
+                      src="./img/men-min.jpg"
+                      loading="lazy"
+                      class="img-card img-fluid mb-3 mx-auto"
+                      alt="Client1"
+                    />
+                    <div class="px-2">
                       <img
                         src="./img/signature.png"
-                        class="img-fluid"
-                        alt="Sadia"
+                        class="img-sign img-fluid mx-auto"
+                        alt="shishir"
                         loading="lazy"
                       />
                     </div>
-                    <div class="col text-md-left border-left">
-                      <blockquote class="font-italic">
-                        “ We have been working with Hunter agency on a variety
-                        of projects and they continue to impress. Their team has
-                        the ability to handle almost any task making them a huge
-                        resource for a small business. All of their work is
-                        timely and accurate.”
-                      </blockquote>
-
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                      <i class="fa fa-star txt-green"></i>
-                    </div>
+                  </div>
+                  <div class="col text-md-left">
+                    <blockquote class="text-center text-md-left">
+                      “In my history of working with Tech agencies, I can
+                      honestly say that there is not one company that I've ever
+                      worked with that has better service than Hunter agency.”
+                    </blockquote>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="row my-5 justify-content-center carousel-indicators position-relative"
-          >
-            <div class="col-0 mx-2">
-              <div
-                class="rounded-circle active border"
-                data-target="#myCarousel"
-                data-slide-to="0"
-              ></div>
+
+            <div class="mt-3 mb-5 px-2">
+              <div class="container border">
+                <div class="row py-3">
+                  <div class="col-md-4 border-right">
+                    <img
+                      src="./img/women-min.jpg"
+                      loading="lazy"
+                      class="img-card img-fluid mb-3 mx-auto"
+                      alt="Client2"
+                    />
+                    <div class="px-2">
+                      <img
+                        src="./img/signature.png"
+                        class="img-sign img-fluid mx-auto"
+                        alt="Sadia"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div class="col text-md-left">
+                    <blockquote class="text-center text-md-left">
+                      “We have been working with Hunter agency on a variety of
+                      projects and they continue to impress.Their team has the
+                      ability to handle almost any task accurately.”
+                    </blockquote>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-0 mx-2">
-              <div
-                class="rounded-circle border"
-                data-target="#myCarousel"
-                data-slide-to="1"
-              ></div>
-            </div>
-            <div class="col-0 mx-2">
-              <div
-                class="rounded-circle border"
-                data-target="#myCarousel"
-                data-slide-to="2"
-              ></div>
+
+            <div class="mt-3 mb-5 px-2">
+              <div class="container border">
+                <div class="row py-3">
+                  <div class="col-md-4 border-right">
+                    <img
+                      src="./img/men-min.jpg"
+                      loading="lazy"
+                      class="img-card img-fluid mb-3 mx-auto"
+                      alt="Client1"
+                    />
+                    <div class="px-2">
+                      <img
+                        src="./img/signature.png"
+                        class="img-sign img-fluid mx-auto"
+                        alt="shishir"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div class="col text-md-left">
+                    <blockquote class="text-center text-md-left">
+                      “In my history of working with Tech agencies, I can
+                      honestly say that there is not one company that I've ever
+                      worked with that has better service than Hunter agency.”
+                    </blockquote>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                    <i class="fa fa-star txt-green"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -871,7 +816,7 @@
       </div>
     </div>
 
-    <div class="container-fluid text-center pt-5 bg-silver py-5 my-5">
+    <div class="container-fluid text-center pt-5 bg-silver py-5 mt-5">
       <div class="row">
         <div class="col">
           <p class="h3 mont-600">SERVICE PRICE</p>
@@ -994,165 +939,147 @@
     </div>
 
     <div class="container my-5">
-      <div class="row justify-content-center mx-auto">
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row justify-content-center mx-auto">
-                <div class="d-inline-block col-md-2">
+      <div class="row">
+        <div class="col">
+          <div class="service-slider">
+            <div class="my-2">
+              <div class="container">
+                <div>
                   <img
                     src="./img/service1.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service3.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service4.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service5.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service6.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service7.png"
-                    class="img-thumbnail opacity50 p-3"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
                     alt="service"
                     loading="lazy"
                   />
                 </div>
               </div>
             </div>
-
-            <div class="carousel-item">
-              <div class="row justify-content-center mx-auto">
-                <div class="d-inline-block col-md-2">
-                  <img
-                    src="./img/service1.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
+            <div class="my-2">
+              <div class="container">
+                <div>
                   <img
                     src="./img/service3.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service4.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service5.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service6.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service7.png"
-                    class="img-thumbnail opacity50 p-3"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
                     alt="service"
                     loading="lazy"
                   />
                 </div>
               </div>
             </div>
-
-            <div class="carousel-item">
-              <div class="row justify-content-center mx-auto">
-                <div class="d-inline-block col-md-2">
-                  <img
-                    src="./img/service1.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
-                  <img
-                    src="./img/service3.png"
-                    class="img-thumbnail opacity50 p-3"
-                    alt="service"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-none d-md-inline-block col-md-2">
+            <div class="my-2">
+              <div class="container">
+                <div>
                   <img
                     src="./img/service4.png"
-                    class="img-thumbnail opacity50 p-3"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
                     alt="service"
                     loading="lazy"
                   />
                 </div>
-                <div class="d-none d-md-inline-block col-md-2">
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
                   <img
                     src="./img/service5.png"
-                    class="img-thumbnail opacity50 p-3"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
                     alt="service"
                     loading="lazy"
                   />
                 </div>
-                <div class="d-none d-md-inline-block col-md-2">
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
                   <img
                     src="./img/service6.png"
-                    class="img-thumbnail opacity50 p-3"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
                     alt="service"
                     loading="lazy"
                   />
                 </div>
-                <div class="d-none d-md-inline-block col-md-2">
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
                   <img
                     src="./img/service7.png"
-                    class="img-thumbnail opacity50 p-3"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
+                    alt="service"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
+                  <img
+                    src="./img/service1.png"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
+                    alt="service"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
+                  <img
+                    src="./img/service3.png"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
+                    alt="service"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
+                  <img
+                    src="./img/service4.png"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
+                    alt="service"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
+                  <img
+                    src="./img/service5.png"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
+                    alt="service"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
+                  <img
+                    src="./img/service6.png"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
+                    alt="service"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="container">
+                <div>
+                  <img
+                    src="./img/service7.png"
+                    class="img-thumbnail opacity50 p-2 mx-auto w-100"
                     alt="service"
                     loading="lazy"
                   />
@@ -1311,10 +1238,10 @@
     <div class="conainer-fluid  bg-darkgrey  position-relative">
       <div class="container">
         <div
-          class="row text-center justify-content-between py-3 align-items-center"
+          class="row text-center justify-content-between py-2 align-items-center"
         >
           <div class="col-md-auto">
-            <h1 class="txt-green">
+            <h1 class="txt-green my-0">
               <span class="mont-900">H</span
               ><small class="text-white">hunter</small>
             </h1>
@@ -1353,33 +1280,10 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <!--BS4 JS-->
     <script src="./js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="vendors/slick/slick.min.js"></script>
     <!-- <script src="https://use.fontawesome.com/73706e2372.js"></script> -->
+    <!--Custom JS-->
+    <script type="text/javascript" src="js/script.js"></script>
 
-    <script>
-      $(".carousel").carousel({ interval: 2000 });
-      var vdo = document.getElementById("vdo-about");
-      var playButton = document.getElementById("playButton");
-      var pauseButton = document.getElementById("pauseButton");
-      function show(element, bool) {
-        element.style.display = Boolean(bool) ? "block" : "none";
-      }
-      vdo.onended = function(e) {
-        show(pauseButton, false);
-        show(playButton, true);
-      };
-      show(pauseButton, false);
-      function vdoplay(yes) {
-        if (yes == 0) {
-          show(playButton, false);
-          show(pauseButton, true);
-          vdo.play();
-        } else {
-          show(pauseButton, false);
-          show(playButton, true);
-          vdo.pause();
-        }
-      }
-    </script>
   </body>
 </html>
